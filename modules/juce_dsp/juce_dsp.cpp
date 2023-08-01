@@ -54,6 +54,10 @@
  #define JUCE_IPP_AVAILABLE 1
 #endif
 
+#if JUCE_USE_PFFFT
+ #include <pffft.h>
+#endif
+
 #include "processors/juce_FIRFilter.cpp"
 #include "processors/juce_IIRFilter.cpp"
 #include "processors/juce_FirstOrderTPTFilter.cpp"
