@@ -23,9 +23,7 @@
   ==============================================================================
 */
 
-namespace juce
-{
-namespace dsp
+namespace juce::dsp
 {
 
 struct FFT::Instance
@@ -1077,5 +1075,4 @@ void FFT::performFrequencyOnlyForwardTransform (float* inputOutputData, bool ign
     zeromem (inputOutputData + limit, static_cast<size_t> (size * 2 - limit) * sizeof (float));
 }
 
-} // namespace dsp
-} // namespace juce
+} // namespace juce::dsp
